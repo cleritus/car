@@ -1,0 +1,57 @@
+header {
+  background-color: #1b1b1b;
+  // height: 145px;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+
+    .page-logo {
+      display: flex;
+      align-items: center;
+      padding: 45px 0;
+
+      .page-logo-image {
+        height: 60px;
+        width: 60px;
+        background-color: #df3636;
+        margin-right: 10px;
+      }
+
+      .page-logo-text {
+        font-size: 42px;
+        letter-spacing: 1px;
+        color: #fefefe;
+        font-family: "Oswald";
+      }
+    }
+
+    .header-info-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-basis: 60%;
+      color: #fefefe;
+
+      .header-info {
+        display: flex;
+        align-items: center;
+      }
+
+      i {
+        font-size: 34px;
+        margin: 0 20px;
+        color: #df3636;
+      }
+
+      span {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        color: #fefefe;
+        font-family: "Open Sans";
+        font-weight: 400;
+      }
+    }
+  }
+}
