@@ -1,10 +1,11 @@
-header {
+.header-container-top {
   background-color: #1b1b1b;
-  // height: 145px;
+
 
   .header-container {
     display: flex;
     justify-content: space-between;
+
 
     .page-logo {
       display: flex;
@@ -39,8 +40,8 @@ header {
       }
 
       i {
-        font-size: 34px;
-        margin: 0 20px;
+        font-size: 32px;
+        margin-right: 20px;
         color: #df3636;
       }
 
@@ -51,6 +52,33 @@ header {
         color: #fefefe;
         font-family: "Open Sans";
         font-weight: 400;
+      }
+
+      span.call-left {
+        color: #df3636
+      }
+    }
+  }
+}
+
+.header-container-bottom {
+  background-color: #282828;
+  border-top: 1px solid #333;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      list-style: none;
+      padding: 25px 60px 25px 0;
+
+      a {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fefefe;
+        font-family: "Open Sans";
+        text-decoration: none;
       }
     }
   }
