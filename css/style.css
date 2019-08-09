@@ -14,6 +14,10 @@ body {
   margin: 0 auto;
 }
 
+span {
+  cursor: default;
+}
+
 .header-container-top {
   background-color: #1b1b1b;
 }
@@ -44,11 +48,12 @@ body {
   margin-right: 10px;
 }
 
-.header-container-top .header-container .page-logo .page-logo-text {
+.header-container-top .header-container .page-logo h1.page-logo-text {
   font-size: 42px;
   letter-spacing: 1px;
   color: #fefefe;
   font-family: "Oswald";
+  cursor: default;
 }
 
 .header-container-top .header-container .header-info-container {
@@ -119,5 +124,70 @@ body {
   color: #fefefe;
   font-family: "Open Sans";
   text-decoration: none;
+}
+
+.banner-area {
+  height: 865px;
+  background-color: #000;
+  text-transform: uppercase;
+}
+
+.banner-area .hero-banner-text-container {
+  position: relative;
+  width: 45%;
+  padding-top: 150px;
+}
+
+.banner-area .hero-banner-text-container .hero-banner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.banner-area .hero-banner-text-container .hero-banner-text .hero-banner-product-name {
+  font-size: 53px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family: "Oswald";
+  font-weight: 700;
+}
+
+.banner-area .hero-banner-text-container .hero-banner-text span {
+  font-size: 53px;
+  letter-spacing: 2px;
+  color: #f63636;
+  font-family: "Oswald";
+  font-weight: 700;
+}
+
+.banner-area .hero-banner-text-container .hero-banner-text .hero-banner-text-description {
+  padding: 0 200px 20px 0;
+}
+
+.banner-area .hero-banner-text-container .hero-banner-text .hero-banner-text-description span {
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "Oswald";
+  font-weight: 400;
+}
+
+.banner-area .hero-banner-text-container .hero-banner-btn {
+  height: 50px;
+  width: 150px;
+  background-color: #df3636;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-align: center;
+  border-style: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
