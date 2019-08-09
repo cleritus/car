@@ -126,9 +126,15 @@ span {
   text-decoration: none;
 }
 
+.menu-active {
+  color: #df3636;
+}
+
 .banner-area {
   height: 865px;
-  background-color: #000;
+  background-image: url("/image/65000.jpg");
+  background-position: center;
+  background-size: cover;
   text-transform: uppercase;
 }
 
