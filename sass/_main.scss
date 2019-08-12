@@ -1,7 +1,6 @@
 .banner-area {
   height: 865px;
-  // background-color: #000;
-  background-image: url("../image/65000.jpg");
+  background-image: url("../image/hero-banner.jpg");
   background-position: center;
   background-size: cover;
   text-transform: uppercase;
@@ -44,19 +43,99 @@
         }
       }
     }
+  }
+}
 
-    .hero-banner-btn {
-      height: 50px;
-      width: 150px;
-      background-color: #df3636;
-      font-size: 14px;
-      color: #ffffff;
+.hero-banner-btn,
+.products-btn {
+  height: 50px;
+  width: 150px;
+  background-color: #df3636;
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-align: center;
+  border-style: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+// SECTIONS
+
+.row-title {
+  display: flex;
+  justify-content: center;
+
+  .section-title-wrap {
+    padding: 50px 0;
+
+    h2 {
+      font-size: 32px;
+      color: #232323;
+      font-family: "Oswald";
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 18px;
+      letter-spacing: 7px;
+      color: #737373;
       font-family: "Open Sans";
       font-weight: 700;
-      text-align: center;
-      border-style: none;
       text-transform: uppercase;
-      cursor: pointer;
+      padding-top: 10px;
     }
+  }
+}
+
+// ARTICLE - PRODUCTS
+
+.products-btn {
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.box-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+
+
+  .product-image {
+    display: flex;
+    align-items: flex-end;
+    width: 270px;
+    height: 195px;
+    background-color: #e9e9e9;
+
+    .product-image-price {
+      font-size: 20px;
+      color: #ffffff;
+      height: 47px;
+      flex-basis: 100%;
+      border-left: 0px solid transparent;
+      border-right: 80px solid transparent;
+      border-bottom: 47px solid #df3636;
+
+      span {
+        line-height: 47px;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  .product-title {
+    font-size: 14px;
+    color: #1d1d1d;
+    padding: 20px 0;
   }
 }
