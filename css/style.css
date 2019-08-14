@@ -18,6 +18,20 @@ span {
   cursor: default;
 }
 
+.back-btn {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  height: 50px;
+  width: 50px;
+  background-color: #df3636;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border-style: none;
+  cursor: pointer;
+}
+
 .header-container-top {
   background-color: #1b1b1b;
 }
@@ -376,5 +390,62 @@ span {
       -ms-flex-pack: end;
           justify-content: flex-end;
   background-color: #111111;
+}
+
+.s3 .box-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+.s3 .box-container .box-service-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.s3 .box-container .box-service-left,
+.s3 .box-container .box-service-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #df3636;
+  margin: 20px;
+  padding: 50px;
+}
+
+.s3 .box-container .box-service-left i,
+.s3 .box-container .box-service-right i {
+  font-size: 36px;
+}
+
+.s3 .box-container .box-service-right {
+  background-color: #1a1a1a;
+}
+
+.s3 .box-container h3 {
+  font-size: 22px;
+  padding: 20px 0 20px 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.s3 .box-container p {
+  font-size: 14px;
+  padding-left: 30px;
 }
 /*# sourceMappingURL=style.css.map */

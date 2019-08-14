@@ -94,8 +94,6 @@
 
 // ARTICLE - PRODUCTS
 
-
-
 .box-container {
   display: flex;
   flex-direction: column;
@@ -149,7 +147,7 @@
   }
 }
 
-// SECTION 2
+// SECTION 2 - specials
 
 .s2 {
   background-color: #1a1a1a;
@@ -214,5 +212,53 @@
       background-color: #111111;
     }
 
+  }
+}
+
+// SECTION 3 - service
+
+.s3 {
+  .box-container {
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Oswald";
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 100px 0;
+
+    .box-service-icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .box-service-left,
+    .box-service-right {
+      display: flex;
+      background-color: #df3636;
+      margin: 20px;
+      padding: 50px;
+
+      i {
+        font-size: 36px;
+        // padding: 20px;
+      }
+    }
+
+    .box-service-right {
+      background-color: #1a1a1a;
+    }
+
+    h3 {
+      font-size: 22px;
+      padding: 20px 0 20px 30px;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 14px;
+      padding-left: 30px;
+    }
   }
 }
