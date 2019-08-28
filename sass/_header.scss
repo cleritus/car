@@ -15,7 +15,7 @@
       .page-logo-image {
         height: 60px;
         width: 60px;
-        background-color: #df3636;
+        background-color: $red;
         margin-right: 10px;
       }
 
@@ -32,18 +32,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-basis: 60%;
+      flex-basis: 50%;
       color: #fefefe;
-
-      .header-info {
-        display: flex;
-        align-items: center;
-      }
 
       i {
         font-size: 32px;
         margin-right: 20px;
-        color: #df3636;
+        color: $red;
       }
 
       span {
@@ -55,8 +50,11 @@
         font-weight: 400;
       }
 
-      span.call-left {
-        color: #df3636
+      a {
+        font-family: 'Oswald', sans-serif;
+        color: $red;
+        font-size: 24px;
+        font-weight: bold;
       }
     }
   }
@@ -67,24 +65,52 @@
   border-top: 1px solid #333;
 
   ul {
-    display: flex;
-    align-items: center;
 
     li {
       list-style: none;
-      padding: 25px 60px 25px 0;
+      padding: 25px 60px 25px 0px;
 
       a {
         font-size: 14px;
-        text-transform: uppercase;
         color: #fefefe;
-        font-family: "Open Sans";
-        text-decoration: none;
+        transition: .2s;
       }
 
       .menu-active {
-        color: #df3636;
+        color: $red;
       }
+
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 25px;
+        padding: 0px 15px 10px 15px;
+        box-shadow: 0 8px 16px rgb(0, 0, 0);
+        z-index: 2;
+
+        a {
+          padding: 10px 0;
+        }
+
+        a:hover {
+          color: $red;
+        }
+      }
+    }
+
+    .li-primary:hover>a {
+      color: $red;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: flex;
+      background-color: $navSecColor;
+      color: $red;
     }
   }
 }
