@@ -20,11 +20,11 @@ span {
 
 .back-btn {
   position: fixed;
-  bottom: 5%;
-  right: 5%;
-  height: 50px;
-  width: 50px;
-  background-color: #df3636;
+  bottom: 10%;
+  right: 2%;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(223, 54, 54, 0.8);
   font-size: 16px;
   color: #ffffff;
   text-align: center;
@@ -39,6 +39,10 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -128,7 +132,6 @@ a {
 }
 
 .header-container-bottom ul li {
-  list-style: none;
   padding: 25px 60px 25px 0px;
 }
 
@@ -468,5 +471,40 @@ a {
 .s3 .box-container p {
   font-size: 14px;
   padding-left: 30px;
+}
+
+.footer-container {
+  background-color: #040404;
+}
+
+.footer-container .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 24px 0;
+  font-size: 14px;
+}
+
+.footer-container .footer-content span {
+  color: #ffffff;
+  font-family: "Open Sans";
+}
+
+.footer-container .footer-content ul li {
+  padding-left: 50px;
+}
+
+.footer-container .footer-content ul li a {
+  color: #ffffff;
+  text-transform: lowercase;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.footer-container .footer-content ul li a:hover {
+  color: #df3636;
 }
 /*# sourceMappingURL=style.css.map */

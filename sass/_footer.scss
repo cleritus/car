@@ -1,0 +1,32 @@
+.footer-container {
+  background-color: #040404;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    font-size: 14px;
+
+    span {
+      color: #ffffff;
+      font-family: "Open Sans";
+    }
+
+    ul {
+      li {
+        padding-left: 50px;
+
+
+        a {
+          color: #ffffff;
+          text-transform: lowercase;
+          transition: .2s;
+        }
+
+        a:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}
