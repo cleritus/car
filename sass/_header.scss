@@ -61,7 +61,7 @@
 }
 
 .header-container-bottom {
-  background-color: #282828;
+  background-color: $navColor;
   border-top: 1px solid #333;
 
   ul {
@@ -109,7 +109,7 @@
 
     .dropdown:hover .dropdown-content {
       display: flex;
-      background-color: $navSecColor;
+      background-color: $navColor;
       color: $red;
     }
   }

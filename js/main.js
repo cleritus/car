@@ -28,4 +28,4 @@ const changeSlide = () => {
   bannerArea.style.transition = 'background-image 1s';
 }
 
-let intervalSlide = setInterval(changeSlide, 5000)
+// let intervalSlide = setInterval(changeSlide, 5000)

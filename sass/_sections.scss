@@ -1,0 +1,186 @@
+// SECTIONS
+
+.row-title {
+  display: flex;
+  justify-content: center;
+
+  .section-title-wrap {
+    padding: 50px 0;
+
+    h2 {
+      font-size: 32px;
+      color: #232323;
+      font-family: "Oswald";
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 18px;
+      letter-spacing: 7px;
+      color: #737373;
+      font-family: "Open Sans";
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-top: 10px;
+    }
+  }
+}
+
+// ARTICLE - products
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+
+  .products-btn {
+    margin-top: 20px;
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  .box-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+
+
+    .product-image {
+      position: relative;
+      width: 270px;
+      height: 195px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      .product-image-price {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 20px;
+        color: $white;
+        height: 47px;
+        flex-basis: 100%;
+        border-left: 0px solid transparent;
+        border-right: 80px solid transparent;
+        border-bottom: 47px solid rgba(223, 54, 54, .8);
+
+        span {
+          line-height: 47px;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+
+  .product-title {
+    font-size: 14px;
+    color: #1d1d1d;
+    padding: 20px 0;
+  }
+}
+
+// SECTION 2 - informations
+
+.s2-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 100px;
+
+  .s2-box {
+    width: 585px;
+    // height: 574px;
+
+    img {
+      width: 100%;
+      box-shadow: 2px 8px 16px rgb(0, 0, 0)
+    }
+  }
+
+  .s2-box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+
+    h3 {
+      font-size: 35px;
+      letter-spacing: 1px;
+      color: #1a1919;
+      font-family: "Oswald";
+      font-weight: 700;
+      margin-bottom: 20px;
+
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #1a1919;
+      font-family: "Open Sans";
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+}
+
+// SECTION 3 - about us
+
+.s3 {
+  .box-container {
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Oswald";
+    letter-spacing: 1px;
+    color: $white;
+    padding: 100px 0;
+
+    .box-service-icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .box-service-left,
+    .box-service-right {
+      display: flex;
+      background-color: $red;
+      margin: 20px;
+      padding: 50px;
+
+      i {
+        font-size: 36px;
+      }
+    }
+
+    .box-service-right {
+      background-color: #1a1a1a;
+    }
+
+    h3 {
+      font-size: 22px;
+      padding: 20px 0 20px 30px;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 14px;
+      padding-left: 30px;
+    }
+  }
+}

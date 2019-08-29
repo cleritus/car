@@ -4,6 +4,7 @@
   background-position: center;
   background-size: cover;
   text-transform: uppercase;
+  color: $white;
 
   img {
     height: 100%;
@@ -21,9 +22,9 @@
       .hero-banner-product-name {
         font-size: 53px;
         letter-spacing: 2px;
-        color: #ffffff;
         font-family: "Oswald";
         font-weight: 700;
+        color: $white;
       }
 
       span {
@@ -41,9 +42,9 @@
           font-size: 14px;
           letter-spacing: 0px;
           line-height: 24px;
-          color: #ffffff;
           font-family: "Oswald";
           font-weight: 400;
+          color: $white;
         }
       }
     }
@@ -55,215 +56,12 @@
   height: 50px;
   width: 150px;
   background-color: $red;
+  color: $white;
   font-size: 14px;
-  color: #ffffff;
   font-family: "Open Sans";
   font-weight: 700;
   text-align: center;
   border-style: none;
   text-transform: capitalize;
   cursor: pointer;
-}
-
-// SECTIONS
-
-.row-title {
-  display: flex;
-  justify-content: center;
-
-  .section-title-wrap {
-    padding: 50px 0;
-
-    h2 {
-      font-size: 32px;
-      color: #232323;
-      font-family: "Oswald";
-      font-weight: 700;
-      text-transform: uppercase;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    h3 {
-      font-size: 18px;
-      letter-spacing: 7px;
-      color: #737373;
-      font-family: "Open Sans";
-      font-weight: 700;
-      text-transform: uppercase;
-      padding-top: 10px;
-    }
-  }
-}
-
-// ARTICLE - PRODUCTS
-
-.box-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 50px;
-
-  .products-btn {
-    a {
-      color: #ffffff;
-      text-decoration: none;
-    }
-  }
-
-  .box-products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-family: "Open Sans";
-    font-weight: 700;
-    text-transform: uppercase;
-
-
-    .product-image {
-      display: flex;
-      align-items: flex-end;
-      width: 270px;
-      height: 195px;
-      background-image: url('/image/quad-black.jpg');
-      background-size: cover;
-      background-position: center;
-
-      .product-image-price {
-        font-size: 20px;
-        color: #ffffff;
-        height: 47px;
-        flex-basis: 100%;
-        border-left: 0px solid transparent;
-        border-right: 80px solid transparent;
-        border-bottom: 47px solid $red;
-
-        span {
-          line-height: 47px;
-          padding-left: 20px;
-        }
-      }
-    }
-  }
-
-  .product-title {
-    font-size: 14px;
-    color: #1d1d1d;
-    padding: 20px 0;
-  }
-}
-
-// SECTION 2 - specials
-
-.s2 {
-  background-color: #1a1a1a;
-
-  h2.section-dark-h2 {
-    color: #ffffff;
-  }
-
-  h3.section-dark-h3 {
-    color: #a4a2a2;
-  }
-
-  .box-container {
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 762px;
-    background-color: #1a1a1a;
-
-    .box-specials {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 25%;
-      height: 100%;
-      background-color: #292929;
-
-      color: #ffffff;
-      font-family: "Oswald";
-      font-weight: 700;
-      text-transform: uppercase;
-
-      .inner-box-specials {
-        width: 341px;
-        height: 164px;
-        background-color: $red;
-      }
-
-      h3 {
-        font-size: 47px;
-        letter-spacing: 1px;
-        padding: 20px 0 0 20px;
-      }
-
-      p {
-        font-size: 31px;
-        letter-spacing: 1px;
-        color: #fae44d;
-        padding: 0 0 20px 20px;
-      }
-
-      span {
-        font-size: 114px;
-        letter-spacing: 3px;
-        padding-left: 20px;
-      }
-    }
-
-    .box-right {
-      display: flex;
-      justify-content: flex-end;
-      background-color: #111111;
-    }
-
-  }
-}
-
-// SECTION 3 - service
-
-.s3 {
-  .box-container {
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: "Oswald";
-    letter-spacing: 1px;
-    color: #ffffff;
-    padding: 100px 0;
-
-    .box-service-icons {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-
-    .box-service-left,
-    .box-service-right {
-      display: flex;
-      background-color: $red;
-      margin: 20px;
-      padding: 50px;
-
-      i {
-        font-size: 36px;
-      }
-    }
-
-    .box-service-right {
-      background-color: #1a1a1a;
-    }
-
-    h3 {
-      font-size: 22px;
-      padding: 20px 0 20px 30px;
-      text-transform: uppercase;
-      font-weight: normal;
-    }
-
-    p {
-      font-size: 14px;
-      padding-left: 30px;
-    }
-  }
 }
