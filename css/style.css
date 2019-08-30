@@ -7,15 +7,12 @@
 
 body {
   margin: 0 auto;
+  cursor: default;
 }
 
 .container {
   width: 1170px;
   margin: 0 auto;
-}
-
-span {
-  cursor: default;
 }
 
 .back-btn {
@@ -43,6 +40,7 @@ span {
 
 li {
   list-style: none;
+  cursor: pointer;
 }
 
 a {
@@ -86,7 +84,6 @@ a {
   letter-spacing: 1px;
   color: #fefefe;
   font-family: "Oswald";
-  cursor: default;
 }
 
 .header-container-top .header-container .header-info-container {
@@ -331,6 +328,7 @@ a {
   position: relative;
   width: 270px;
   height: 195px;
+  cursor: pointer;
 }
 
 .box-container .box-products .product-image img {
@@ -471,6 +469,81 @@ a {
 .s3 .box-container p {
   font-size: 14px;
   padding-left: 30px;
+}
+
+.modal-container {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-container .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+.modal-container .modal-content .modal-header-container {
+  background-color: #ededed;
+  width: 100%;
+}
+
+.modal-container .modal-content .modal-header-container .modal-header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #1a1919;
+  padding: 30px 0;
+}
+
+.modal-container .modal-content .modal-header-container .modal-header h3 {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.modal-container .modal-content .modal-header-container .modal-header .breadcrumbs {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+.modal-container .modal-content .modal-header-container .modal-header .breadcrumbs li:after {
+  content: "|";
+  margin: 0 5px;
+}
+
+.modal-container .modal-content .modal-header-container .modal-header .breadcrumbs li:last-child:after {
+  content: "";
+}
+
+.modal-container .modal-content img {
+  width: 50%;
 }
 
 .footer-container {

@@ -10,16 +10,12 @@
 body {
   // max-width: 1920px;
   margin: 0 auto;
-
+  cursor: default;
 }
 
 .container {
   width: 1170px;
   margin: 0 auto;
-}
-
-span {
-  cursor: default;
 }
 
 .back-btn {
@@ -43,6 +39,7 @@ span {
 
 li {
   list-style: none;
+  cursor: pointer;
 }
 
 a {
