@@ -1,4 +1,4 @@
-// jQ - preview to top
+// jQ - back to top 
 
 $('.back-btn').on('click', function () {
   $('body, html').animate({
@@ -27,4 +27,38 @@ const changeSlide = () => {
   bannerArea.style.transition = 'background-image 1s';
 }
 
-let intervalSlide = setInterval(changeSlide, 5000)
+let intervalSlide = setInterval(changeSlide, 5000);
+
+// Preview images in ._product-info
+
+const imgList = document.querySelectorAll('.image-mini');
+const mainImg = document.querySelector('.main-info-img');
+
+const openImage = (e) => mainImg.src = e.target.src;
+
+imgList.forEach(imgItem => imgItem.addEventListener('click', openImage));
+
+
+
+// // Open and close modal functions
+
+// const openerList = document.querySelectorAll('.product-image');
+// const modal = document.querySelector('.modal-container');
+// const modalBtn = document.querySelector('.closeBtn')
+
+// const startModal = () => {
+//   modal.style.display = "flex";
+// console.log('ok');
+//   document.querySelector('.test').textContent = 'ok';
+// }
+
+// //  Close modal by 'escape' key on keyboard
+// const closeModal = (e) => {
+//   if (e.keyCode === 27) modal.style.display = "none";
+// }
+
+// // close by button
+// openerList.forEach(openerItem => openerItem.addEventListener('click', startModal));
+
+// document.body.addEventListener('keydown', closeModal);
+// // modalBtn.addEventListener('click', () => modal.style.display = "none");
