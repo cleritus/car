@@ -90,27 +90,76 @@
           }
         }
 
+        .info-main-img-container {
+          width: 870px
+        }
+
         img {
-          width: 870px;
-          height: 500px;
+          width: 100%;
         }
 
         .box-mini-container {
-          display: flex;
-          justify-content: space-between;
+          position: relative;
           margin: 30px 0 50px 0;
+          overflow: hidden;
 
-          img {
-            width: 194px;
-            height: 98px;
-            background-color: #e2e2e2;
+          .mini-arrows {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(90, 90, 90, .4);
+            // filter: opacity(.4);
+            z-index: 2;
+            padding: 15px 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: .3s;
+          }
+
+          .mini-arrows:hover {
+            background-color: $red;
+            color: #ffffff;
+            filter: opacity(.8);
+          }
+
+          .arrow-left {
+            left: 0;
+
+          }
+
+          .arrow-right {
+            right: 0;
+          }
+
+          i {
+            font-size: 34px;
+          }
+
+          .box-mini {
+            position: relative;
+            display: flex;
+            top: 0;
+            left: 0;
+            transition: .5s;
+
+            img.img-mini {
+              width: 194px;
+              background-color: #e2e2e2;
+              margin: 0 12px;
+              cursor: pointer;
+              transition: .2s;
+            }
+
+            img:hover {
+              filter: brightness(.8)
+            }
           }
         }
 
         .info-data {
           .info-price {
             width: 270px;
-            background-color: #df3636;
+            background-color: $red;
             text-align: center;
             font-size: 30px;
             color: #ffffff;
@@ -130,7 +179,7 @@
               margin-bottom: 30px;
             }
 
-            .table {
+            .data-table {
               display: flex;
               flex-direction: column;
 
@@ -147,6 +196,9 @@
                 font-size: 14px;
                 color: #5a5a5a;
                 font-family: "Open Sans";
+              }
+
+              span::first-letter {
                 text-transform: capitalize;
               }
 
@@ -161,6 +213,57 @@
           }
         }
       }
+
+      .info-details {
+        display: flex;
+        flex-direction: column;
+        width: 870px;
+
+        .info-text {
+          padding: 0 100px 50px;
+          text-align: justify;
+          font-size: 18px;
+          line-height: 25px;
+          color: #262626;
+          font-family: "Open Sans";
+          font-weight: 700;
+        }
+
+        .documentation {
+          display: flex;
+          justify-content: center;
+          font-size: 14px;
+          line-height: 24px;
+          color: #313131;
+          font-family: "Open Sans";
+          margin-bottom: 50px;
+
+          thead {
+            background-color: $red;
+            color: #ffffff;
+          }
+
+          td {
+            padding-left: 20px;
+          }
+
+          td::first-letter {
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+
+    .info-footer {
+      width: 100%;
+      background-color: #e9e9e9;
+      text-align: center;
+      font-size: 18px;
+      color: #262626;
+      font-family: "Open Sans";
+      line-height: 30px;
+      font-weight: 600;
+      padding: 30px 0;
     }
   }
 }

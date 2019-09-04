@@ -32,11 +32,37 @@ let intervalSlide = setInterval(changeSlide, 5000);
 // Preview images in ._product-info
 
 const imgList = document.querySelectorAll('.image-mini');
-const mainImg = document.querySelector('.main-info-img');
+const mainImg = document.querySelector('.info-main-img');
 
 const openImage = (e) => mainImg.src = e.target.src;
 
 imgList.forEach(imgItem => imgItem.addEventListener('click', openImage));
+
+// Scroll to the next mini-image
+
+const arrowRight = document.querySelector('.arrow-right');
+const arrowLeft = document.querySelector('.arrow-left');
+const boxMini = document.querySelector('.box-mini');
+const imgMini = document.querySelector('.img-mini');
+
+// let number = 0; -assigned before
+
+const leftPosition = () => {
+
+  number -= 217;
+  boxMini.style.left = `${number}px`;
+
+}
+
+const rightPosition = () => {
+
+  number += 217;
+  boxMini.style.left = `${number}px`;
+
+}
+
+arrowRight.addEventListener('click', rightPosition);
+arrowLeft.addEventListener('click', leftPosition);
 
 
 
