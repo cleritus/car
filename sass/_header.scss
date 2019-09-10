@@ -77,37 +77,9 @@
       .menu-active {
         color: $red;
       }
-
-      .dropdown {
-        position: relative;
-      }
-
-      .dropdown-content {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        margin-top: 25px;
-        padding: 0px 15px 10px 15px;
-        box-shadow: 0 8px 16px rgb(0, 0, 0);
-        z-index: 2;
-
-        a {
-          padding: 10px 0;
-        }
-
-        a:hover {
-          color: $red;
-        }
-      }
     }
 
     .li-primary:hover>a {
-      color: $red;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: flex;
-      background-color: $navColor;
       color: $red;
     }
   }

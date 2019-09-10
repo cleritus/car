@@ -66,6 +66,11 @@
         top: 0;
         left: 0;
         width: 100%;
+        transition: 0.2s;
+      }
+
+      img:hover {
+        filter: brightness(.8);
       }
 
       .product-image-price {
@@ -95,14 +100,14 @@
   }
 }
 
-// SECTION 2 - informations
+// SECTION 4 - informations
 
-.s2-box-container {
+.s4-box-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
 
-  .s2-box {
+  .s4-box {
     width: 585px;
 
     img {
@@ -111,7 +116,7 @@
     }
   }
 
-  .s2-box-text {
+  .s4-box-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,9 +143,9 @@
   }
 }
 
-// SECTION 3 - about us
+// SECTION 5 - about us
 
-.s3 {
+.s5 {
   .box-container {
     flex-direction: row;
     justify-content: space-between;

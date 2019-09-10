@@ -1,4 +1,4 @@
-const imgList = [...document.querySelectorAll('.img-mini')];
+const imgList = document.querySelectorAll('.img-mini');
 const mainImg = document.querySelector('.info-main-img');
 const imgWrap = document.querySelector('.img-mini-wrap');
 
@@ -21,7 +21,7 @@ imgList.forEach(imgItem => imgItem.addEventListener('click', openImage));
 // Scroll to the next mini-image
 
 const leftPosition = () => {
-  if (Math.abs(number) < Math.abs(widthImgMini * imgHide)) {
+  if (Math.abs(number) < Math.abs(widthImgMini * imgHide) && (imgNumber > imgActive)) {
     number -= widthImgMini;
     boxMini.style.left = `${number}px`;
   } else return;

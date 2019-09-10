@@ -10,7 +10,8 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -19,8 +20,8 @@
       <div class="header-container-top">
         <div class="header-container container">
           <div class="page-logo">
-            <a href="index.html"><div class=page-logo-image></div></a>
-            <a href="index.html"><h1 class=page-logo-text>Pan Samochodzik</h1></a>
+            <a href="../index.html"><div class=page-logo-image></div></a>
+            <a href="../index.html"><h1 class=page-logo-text>Pan Samochodzik</h1></a>
           </div>
 
 
@@ -39,7 +40,6 @@
               <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
             </div>
             <div> <a href="http://www.olx.pl" target="_blank" rel="noopener noreferrer">OLX</a></div>
-
           </div>
         </div>
       </div>
@@ -49,11 +49,11 @@
           <nav class="nav-primary">
             <div class="nav-primary-left">
               <ul class="d-flex-row">
-                <li class="li-primary"><a href="products/products.html">pojazdy elektryczne</a></li>
+                <li class="li-primary"><a href="products.html" class="menu-active">pojazdy elektryczne</a></li>
                 <li class="li-primary"><a href="#">wypożyczalnia autek</a></li>
                 <li class="li-primary"><a href="#">prawo jazdy dla przedszkolaka</a></li>
                 <li class="li-primary"><a href="#">galeria</a></li>
-                <li class="li-primary"><a href="contact.html">kontakt</a></li>
+                <li class="li-primary"><a href="../contact.html">kontakt</a></li>
               </ul>
             </div>
           </nav>
@@ -61,28 +61,24 @@
       </div>
     </header>
 
-    <main class="banner-area">
-      <div class="hero-banner container">
-        <div class="hero-banner-text-container">
-          <div class="hero-banner-text">
-            <div>
-              <span class="hero-banner-product-name">BMW x6 series 2019</span>
-              <p><span>1900 pln</span></p>
-            </div>
-
-            <div class="hero-banner-text-description">
-              <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. At saepe vero cum totam cumque consectetur?
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </span>
-            </div>
+    <div class="breadcrumbs">
+      <div class="breadcrumbs-content">
+        <div class="breadcrumbs-header-container">
+          <div class="breadcrumbs-header  container d-flex-row">
+            <h3>garaż</h3>
+            <ul class="nav-secondary d-flex-row">
+              <li><a href="../index.html">home</a></li>
+              <li id="goto-s1">autka</li>
+              <li id="goto-s2">motorki</li>
+              <li id="goto-s3">mini-autka</li>
+              <li id="goto-s4">serwis</li>
+            </ul>
           </div>
-
-          <a href="#"><button class="hero-banner-btn">więcej</button></a>
         </div>
       </div>
-    </main>
+    </div>
 
-    <section class="s1">
+    <section class="s1" data-section="goto-s1">
       <div class="row-title">
         <div class="section-title-wrap">
           <hr>
@@ -95,9 +91,70 @@
       <article>
         <div class="box-container container">
           <div class="box-products">
+
             <div class="products-container">
               <div class="product-image">
-                <a href="products/p1-bmw.html"><img src="image/bmw-silver.jpg" alt=""></a>
+                <a href="../products/p1-bmw.html"><img src="../image/bmw-silver.jpg" alt=""></a>
+                <div class="product-image-price"><span>1200 pln</span></div>
+              </div>
+              <div class="product-title">
+                <h4>BWM X6 NAVI</h4>
+                <P>bateria, długość jazdy</P>
+              </div>
+            </div>
+            <div class="products-container">
+              <div class="product-image">
+                <a href="../products/p1-bmw.html"><img src="../image/bmw-silver.jpg" alt=""></a>
+                <div class="product-image-price"><span>1200 pln</span></div>
+              </div>
+              <div class="product-title">
+                <h4>BWM X6 NAVI</h4>
+                <P>bateria, długość jazdy</P>
+              </div>
+            </div>
+            <div class="products-container">
+              <div class="product-image">
+                <a href="../products/p1-bmw.html"><img src="../image/bmw-silver.jpg" alt=""></a>
+                <div class="product-image-price"><span>1200 pln</span></div>
+              </div>
+              <div class="product-title">
+                <h4>BWM X6 NAVI</h4>
+                <P>bateria, długość jazdy</P>
+              </div>
+            </div>
+            <div class="products-container">
+              <div class="product-image">
+                <a href="../products/p1-bmw.html"><img src="../image/bmw-silver.jpg" alt=""></a>
+                <div class="product-image-price"><span>1200 pln</span></div>
+              </div>
+              <div class="product-title">
+                <h4>BWM X6 NAVI</h4>
+                <P>bateria, długość jazdy</P>
+              </div>
+            </div>
+            <div class="products-container">
+              <div class="product-image">
+                <a href="../products/p1-bmw.html"><img src="../image/bmw-silver.jpg" alt=""></a>
+                <div class="product-image-price"><span>1200 pln</span></div>
+              </div>
+              <div class="product-title">
+                <h4>BWM X6 NAVI</h4>
+                <P>bateria, długość jazdy</P>
+              </div>
+            </div>
+            <div class="products-container">
+              <div class="product-image">
+                <a href="../products/p1-bmw.html"><img src="../image/bmw-silver.jpg" alt=""></a>
+                <div class="product-image-price"><span>1200 pln</span></div>
+              </div>
+              <div class="product-title">
+                <h4>BWM X6 NAVI</h4>
+                <P>bateria, długość jazdy</P>
+              </div>
+            </div>
+            <div class="products-container">
+              <div class="product-image">
+                <a href="../products/p1-bmw.html"><img src="../image/bmw-silver.jpg" alt=""></a>
                 <div class="product-image-price"><span>1200 pln</span></div>
               </div>
               <div class="product-title">
@@ -106,9 +163,30 @@
               </div>
             </div>
 
-            <div class="product-container">
+
+
+
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="s2" data-section="goto-s2" data-aos="fade-left">
+      <div class="row-title">
+        <div class="section-title-wrap">
+          <hr>
+          <h2>nasze motorki</h2>
+          <hr>
+          <h3>popularne produkty</h3>
+        </div>
+      </div>
+
+      <article>
+        <div class="box-container container">
+          <div class="box-products">
+            <div class="products-container">
               <div class="product-image">
-                <img src="image/quad-black.jpg" alt="">
+                <a href="../products/p1-bmw.html"><img src="../image/bmw-silver.jpg" alt=""></a>
                 <div class="product-image-price"><span>1200 pln</span></div>
               </div>
               <div class="product-title">
@@ -117,64 +195,27 @@
               </div>
             </div>
 
-            <div class="product-container">
-              <div class="product-image">
-                <img src="image/quad-black.jpg" alt="">
-                <div class="product-image-price"><span>1200 pln</span></div>
-              </div>
-              <div class="product-title">
-                <h4>BWM X6 NAVI</h4>
-                <P>bateria, długość jazdy</P>
-              </div>
-            </div>
+          </div>
+        </div>
+      </article>
+    </section>
 
-            <div class="product-container">
-              <div class="product-image">
-                <img src="image/quad-black.jpg" alt="">
-                <div class="product-image-price"><span>1200 pln</span></div>
-              </div>
-              <div class="product-title">
-                <h4>BWM X6 NAVI</h4>
-                <P>bateria, długość jazdy</P>
-              </div>
-            </div>
+    <section class="s3" data-section="goto-s3" data-aos="fade-right">
+      <div class="row-title">
+        <div class="section-title-wrap">
+          <hr>
+          <h2>nasze mini-autka</h2>
+          <hr>
+          <h3>popularne produkty</h3>
+        </div>
+      </div>
 
-            <div class="product-container">
+      <article>
+        <div class="box-container container">
+          <div class="box-products">
+            <div class="products-container">
               <div class="product-image">
-                <img src="image/quad-black.jpg" alt="">
-                <div class="product-image-price"><span>1200 pln</span></div>
-              </div>
-              <div class="product-title">
-                <h4>BWM X6 NAVI</h4>
-                <P>bateria, długość jazdy</P>
-              </div>
-            </div>
-
-            <div class="product-container">
-              <div class="product-image">
-                <img src="image/quad-black.jpg" alt="">
-                <div class="product-image-price"><span>1200 pln</span></div>
-              </div>
-              <div class="product-title">
-                <h4>BWM X6 NAVI</h4>
-                <P>bateria, długość jazdy</P>
-              </div>
-            </div>
-
-            <div class="product-container">
-              <div class="product-image">
-                <img src="image/quad-black.jpg" alt="">
-                <div class="product-image-price"><span>1200 pln</span></div>
-              </div>
-              <div class="product-title">
-                <h4>BWM X6 NAVI</h4>
-                <P>bateria, długość jazdy</P>
-              </div>
-            </div>
-
-            <div class="product-container">
-              <div class="product-image">
-                <img src="image/quad-black.jpg" alt="">
+                <a href="../products/p1-bmw.html"><img src="../image/bmw-silver.jpg" alt=""></a>
                 <div class="product-image-price"><span>1200 pln</span></div>
               </div>
               <div class="product-title">
@@ -183,7 +224,6 @@
               </div>
             </div>
           </div>
-          <a href="products/products.html"><button class="products-btn">więcej</button></a>
         </div>
       </article>
     </section>
@@ -191,7 +231,7 @@
     <section class="s4">
       <div class="s4-box-container container">
         <div class="s4-box box-img">
-          <img src="image/bmw-silver.jpg" alt="">
+          <img src="../image/bmw-silver.jpg" alt="">
         </div>
 
         <div class="s4-box s4-box-text">
@@ -208,13 +248,13 @@
           <h3>Od/Do jakiego wieku są pojazdy?
           </h3>
           <p>Jeżeli Twój Maluch potrafi już siedzieć to może już szukać sobie bryki. Autka ograniczone są wagowo.
-            Najbardziej popularne są z max. udźwigiem do 30kg. Posiadany też w swojej ofercie fury z max. obciążeniem
-            do 50kg!!!!!
+            Najbardziej popularne są z max. udźwigiem do 30kg. Posiadany też w swojej ofercie fury z max.
+            obciążeniem do 50kg!!!!!
           </p>
         </div>
 
         <div class="s4-box box-img">
-          <img src="image/bmw-silver.jpg" alt="">
+          <img src="../image/bmw-silver.jpg" alt="">
         </div>
       </div>
     </section>
@@ -229,7 +269,8 @@
 
           <div>
             <h3>Kilka słów o nas</h3>
-            <p>Pan Samochodzik to wypożyczalnia i sprzedaż akumulatorowych autek/motorków dla dzieci. Pojazdy gwarantują
+            <p>Pan Samochodzik to wypożyczalnia i sprzedaż akumulatorowych autek/motorków dla dzieci. Pojazdy
+              gwarantują
               pełne bezpieczeństwo. Wyposażone są w pasy bezpieczeństwa, mają wolny start/hamowanie. Posiadają
               sygnalizację świetlną i dźwiękową. 
             </p>
@@ -244,7 +285,8 @@
 
           <div>
             <h3>Jak nas znaleźć? </h3>
-            <p>Pan Samochodzik i jego banda zwariowanych autek mieści się w Outlet Center w Białymstoku (Narodowych Sił
+            <p>Pan Samochodzik i jego banda zwariowanych autek mieści się w Outlet Center w Białymstoku (Narodowych
+              Sił
               Zbrojnych 15B) przy Smyku. Jesteśmy w każdy weekend. W tygodniu garaż otwieramy na specjalne życzenie
               naszych klientów (najlepiej po wcześniejszym kontakcie telefonicznym). 
             </p>
@@ -253,6 +295,8 @@
       </div>
     </section>
 
+    <!-- <section class="s6" data-section="goto-s6"></section> -->
+
     <button class="back-btn"><i class="fas fa-chevron-up"></i></button>
 
     <footer class="footer-container">
@@ -260,7 +304,7 @@
         <span class="footer-copyright">Copyright © 2019</span>
 
         <ul class="footer-nav d-flex-row">
-          <li><a href="products/products.html">pojazdy elektryczne</a></li>
+          <li><a href="products.html" class="menu-active">pojazdy elektryczne</a></li>
           <li class="li-primary"><a href="#">wypożyczalnia autek</a></li>
           <li class="li-primary"><a href="#">prawo jazdy dla przedszkolaka</a></li>
           <li class="li-primary"><a href="#">galeria</a></li>
@@ -273,10 +317,15 @@
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-  <script src="js/main-slider.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000
+    });
+  </script>
 
-  <script src="js/nav.js"></script>
-
+  <script src="../js/nav.js"></script>
 </body>
 
 </html>

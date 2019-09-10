@@ -11,25 +11,12 @@ body {
   // max-width: 1920px;
   margin: 0 auto;
   cursor: default;
+  overflow-x: hidden;
 }
 
 .container {
   width: 1170px;
   margin: 0 auto;
-}
-
-.back-btn {
-  position: fixed;
-  bottom: 10%;
-  right: 2%;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(223, 54, 54, .8);
-  font-size: 16px;
-  color: #ffffff;
-  text-align: center;
-  border-style: none;
-  cursor: pointer;
 }
 
 .d-flex-row {
@@ -46,4 +33,36 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Open Sans";
+}
+
+//Buttons
+
+.hero-banner-btn,
+.products-btn {
+  height: 50px;
+  width: 150px;
+  background-color: $red;
+  color: $white;
+  font-size: 14px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-align: center;
+  border-style: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.back-btn {
+  position: fixed;
+  bottom: 10%;
+  right: 2%;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(223, 54, 54, .8);
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border-style: none;
+  cursor: pointer;
+  z-index: 3;
 }
