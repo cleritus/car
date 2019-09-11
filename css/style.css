@@ -390,6 +390,10 @@ a {
 .box-container .box-products .product-image img:hover {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 2px 8px 16px black;
+          box-shadow: 2px 8px 16px black;
 }
 
 .box-container .box-products .product-image .product-image-price {
@@ -531,6 +535,7 @@ a {
 
 .info-main-container {
   margin-top: 50px;
+  font-family: "Open Sans";
 }
 
 .info-main-container .info-main {
@@ -549,7 +554,6 @@ a {
   padding-left: 30px;
   font-size: 16px;
   color: #343434;
-  font-family: "Open Sans";
   text-transform: uppercase;
 }
 
@@ -653,7 +657,6 @@ a {
   text-align: center;
   font-size: 30px;
   color: #ffffff;
-  font-family: "Open Sans";
   padding: 11px 0;
   margin-bottom: 40px;
 }
@@ -664,10 +667,12 @@ a {
 }
 
 .info-main-container .info-main .info-data .info-table-container h3 {
+  font-family: "Oswald";
   font-size: 30px;
   text-align: center;
   color: #004794;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .info-main-container .info-main .info-data .info-table-container .data-table {
@@ -698,7 +703,6 @@ a {
   padding: 15px 0;
   font-size: 14px;
   color: #5a5a5a;
-  font-family: "Open Sans";
 }
 
 .info-main-container .info-main .info-data .info-table-container .data-table span::first-letter {
@@ -730,7 +734,6 @@ a {
   font-size: 18px;
   line-height: 25px;
   color: #262626;
-  font-family: "Open Sans";
   font-weight: 700;
 }
 
@@ -744,7 +747,6 @@ a {
   font-size: 14px;
   line-height: 24px;
   color: #313131;
-  font-family: "Open Sans";
   margin-bottom: 50px;
 }
 

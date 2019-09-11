@@ -71,6 +71,8 @@
 
       img:hover {
         filter: brightness(.8);
+        transform: scale(1.02);
+        box-shadow: 2px 8px 16px rgb(0, 0, 0);
       }
 
       .product-image-price {
