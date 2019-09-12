@@ -54,10 +54,10 @@ a {
   cursor: pointer;
 }
 
-.back-btn {
+.back-btn,
+.nav-right-btn,
+.nav-left-btn {
   position: fixed;
-  bottom: 10%;
-  right: 2%;
   height: 40px;
   width: 40px;
   background-color: rgba(223, 54, 54, 0.8);
@@ -67,6 +67,21 @@ a {
   border-style: none;
   cursor: pointer;
   z-index: 3;
+}
+
+.back-btn {
+  bottom: 10%;
+  right: 2%;
+}
+
+.nav-right-btn {
+  bottom: 30%;
+  right: 2%;
+}
+
+.nav-left-btn {
+  bottom: 30%;
+  left: 2%;
 }
 
 .header-container-top {
