@@ -16,7 +16,6 @@ const imgHide = imgNumber - imgActive;
 
 const openImage = (e) => mainImg.src = e.target.src;
 
-imgList.forEach(imgItem => imgItem.addEventListener('click', openImage));
 
 // Scroll to the next mini-image
 
@@ -34,5 +33,6 @@ const rightPosition = () => {
   } else return
 }
 
+imgList.forEach(imgItem => imgItem.addEventListener('click', openImage));
 arrowRight.addEventListener('click', leftPosition);
 arrowLeft.addEventListener('click', rightPosition);
