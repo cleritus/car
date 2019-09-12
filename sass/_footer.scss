@@ -10,18 +10,24 @@
 
     span {
       color: #ffffff;
-      font-family: "Open Sans";
+
+      span {
+        color: $red;
+      }
     }
 
     ul {
       li {
         padding-left: 50px;
 
-
         a {
           color: #ffffff;
           text-transform: lowercase;
           transition: .2s;
+        }
+
+        .menu-active {
+          color: $red;
         }
 
         a:hover {

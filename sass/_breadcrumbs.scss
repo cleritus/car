@@ -28,7 +28,6 @@
         padding: 20px 0;
 
         .nav-secondary {
-          font-family: "Open Sans";
           font-size: 14px;
 
           li {
@@ -53,7 +52,7 @@
             }
           }
 
-          li:nth-child(2) {
+          .menu-active {
             color: $red
           }
 

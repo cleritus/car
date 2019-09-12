@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: "Open Sans";
+}
+
 body {
   // max-width: 1920px;
   margin: 0 auto;
@@ -32,7 +36,6 @@ li {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Open Sans";
 }
 
 //Buttons

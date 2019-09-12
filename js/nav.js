@@ -1,4 +1,4 @@
-// jQ - back to top 
+// jQ - back to top
 
 $('.back-btn').on('click', function () {
   $('body, html').animate({

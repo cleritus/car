@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+:root {
+  font-family: "Open Sans";
+}
+
 body {
   margin: 0 auto;
   cursor: default;
@@ -33,7 +37,6 @@ li {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Open Sans";
 }
 
 .hero-banner-btn,
@@ -129,7 +132,6 @@ a {
   letter-spacing: 1px;
   line-height: 30px;
   color: #fefefe;
-  font-family: "Open Sans";
   font-weight: 400;
 }
 
@@ -210,7 +212,6 @@ a {
 }
 
 .breadcrumbs .breadcrumbs-content .breadcrumbs-header-container .breadcrumbs-header .nav-secondary {
-  font-family: "Open Sans";
   font-size: 14px;
 }
 
@@ -235,7 +236,7 @@ a {
   content: "";
 }
 
-.breadcrumbs .breadcrumbs-content .breadcrumbs-header-container .breadcrumbs-header .nav-secondary li:nth-child(2) {
+.breadcrumbs .breadcrumbs-content .breadcrumbs-header-container .breadcrumbs-header .nav-secondary .menu-active {
   color: #df3636;
 }
 
@@ -529,13 +530,8 @@ a {
   padding-left: 30px;
 }
 
-.red-color {
-  color: #df3636;
-}
-
 .info-main-container {
   margin-top: 50px;
-  font-family: "Open Sans";
 }
 
 .info-main-container .info-main {
@@ -769,7 +765,6 @@ a {
   text-align: center;
   font-size: 18px;
   color: #262626;
-  font-family: "Open Sans";
   line-height: 30px;
   font-weight: 600;
   padding: 30px 0;
@@ -793,7 +788,10 @@ a {
 
 .footer-container .footer-content span {
   color: #ffffff;
-  font-family: "Open Sans";
+}
+
+.footer-container .footer-content span span {
+  color: #df3636;
 }
 
 .footer-container .footer-content ul li {
@@ -805,6 +803,10 @@ a {
   text-transform: lowercase;
   -webkit-transition: .2s;
   transition: .2s;
+}
+
+.footer-container .footer-content ul li .menu-active {
+  color: #df3636;
 }
 
 .footer-container .footer-content ul li a:hover {
