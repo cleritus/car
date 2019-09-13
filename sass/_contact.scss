@@ -1,0 +1,32 @@
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+
+  h3 {
+    // font-size: 14px;
+    line-height: 36px;
+    color: #3e3e3e;
+    font-family: "Oswald";
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 14px;
+    color: #a1a1a1;
+    line-height: 24px;
+  }
+
+  a {
+    font-family: 'Oswald', sans-serif;
+    color: $red;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  i {
+    font-size: 32px;
+    margin-right: 20px;
+    color: $red;
+  }
+}

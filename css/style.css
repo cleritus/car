@@ -827,4 +827,40 @@ a {
 .footer-container .footer-content ul li a:hover {
   color: #df3636;
 }
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+
+.contact-container h3 {
+  line-height: 36px;
+  color: #3e3e3e;
+  font-family: "Oswald";
+  font-weight: 700;
+}
+
+.contact-container p {
+  font-size: 14px;
+  color: #a1a1a1;
+  line-height: 24px;
+}
+
+.contact-container a {
+  font-family: 'Oswald', sans-serif;
+  color: #df3636;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact-container i {
+  font-size: 32px;
+  margin-right: 20px;
+  color: #df3636;
+}
 /*# sourceMappingURL=style.css.map */
