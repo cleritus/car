@@ -57,6 +57,18 @@ const pathProducts = [
   "/products/p4-lexus.html",
   "/products/p5-mesio_cab.html",
   "/products/p6-buggy.html",
+  "/products/p7-bmw6gt.html",
+  "/products/p8-bmw_new.html",
+  "/products/p9-buggy_amort.html",
+  "/products/p10-ford_ranger.html",
+  "/products/p11-mercedes2.html",
+  "/products/p12-mercedesSL.html",
+  "/products/p16-beetle.html",
+  "/products/p17-volvo90.html",
+  "/products/p18-amarok.html",
+  "/products/p13-bmw1000r.html",
+  "/products/p14-bmw1000rr.html",
+  "/products/p15-rebel.html",
 ];
 
 const actualPath = this.location.pathname;
