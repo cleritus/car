@@ -263,7 +263,7 @@ a {
 
 .banner-area {
   height: 865px;
-  background-image: url("../image/quad-black.jpg");
+  background-image: url("../image/bmw2.jpg");
   background-position: center;
   background-size: cover;
   text-transform: uppercase;
@@ -381,22 +381,26 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Open Sans";
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.box-container .box-products .product-image {
+.box-container .box-products .products-container {
+  padding: 10px;
+}
+
+.box-container .box-products .products-container .product-image {
   position: relative;
   width: 270px;
   height: 195px;
   cursor: pointer;
 }
 
-.box-container .box-products .product-image img {
+.box-container .box-products .products-container .product-image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -405,7 +409,7 @@ a {
   transition: 0.2s;
 }
 
-.box-container .box-products .product-image img:hover {
+.box-container .box-products .products-container .product-image img:hover {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
   -webkit-transform: scale(1.02);
@@ -414,7 +418,7 @@ a {
           box-shadow: 2px 8px 16px black;
 }
 
-.box-container .box-products .product-image .product-image-price {
+.box-container .box-products .products-container .product-image .product-image-price {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -428,7 +432,7 @@ a {
   border-bottom: 47px solid rgba(223, 54, 54, 0.8);
 }
 
-.box-container .box-products .product-image .product-image-price span {
+.box-container .box-products .products-container .product-image .product-image-price span {
   line-height: 47px;
   padding-left: 20px;
 }
@@ -437,6 +441,55 @@ a {
   font-size: 14px;
   color: #1d1d1d;
   padding: 20px 0;
+}
+
+.service-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.service-container .service-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 585px;
+  padding: 30px;
+}
+
+.service-container .service-content h3 {
+  font-size: 30px;
+  line-height: 36px;
+  color: #df3636;
+  font-family: "Oswald";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-container .service-content p {
+  padding-top: 20px;
+  line-height: 28px;
+  color: #555555;
+  font-style: italic;
+}
+
+.service-container .service-img {
+  padding: 30px;
+  width: 585px;
+}
+
+.service-container .service-img img {
+  width: 100%;
+  -webkit-box-shadow: 2px 8px 16px black;
+          box-shadow: 2px 8px 16px black;
 }
 
 .s4-box-container {
@@ -545,6 +598,34 @@ a {
 .s5 .box-container p {
   font-size: 14px;
   padding-left: 30px;
+}
+
+.rent-content p {
+  padding-top: 20px;
+  line-height: 28px;
+  color: #555555;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.rent-image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rent-image-container img {
+  width: 40%;
+  padding: 30px;
+  margin: 20px;
+  -webkit-box-shadow: 2px 8px 16px black;
+          box-shadow: 2px 8px 16px black;
 }
 
 .info-main-container {

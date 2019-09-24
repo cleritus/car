@@ -2,10 +2,10 @@
 
 const bannerArea = document.querySelector('.banner-area');
 const imageList = [
-  imgSrc = 'url("../image/quad-black.jpg")',
-  imgSrc = 'url("../image/bmw-silver.jpg")',
-  imgSrc = 'url("../image/alfa-red.jpg")',
-  imgSrc = 'url("../image/lexus-blue.jpg")',
+  imgSrc = 'url("../image/bmw2.jpg")',
+  imgSrc = 'url("../image/Buggy (3).jpg")',
+  imgSrc = 'url("../image/mercedes (14).jpg")',
+  imgSrc = 'url("../image/Ford_ranger (16).jpg")',
 ];
 
 let number = 0;
