@@ -2,10 +2,25 @@
 
 const bannerArea = document.querySelector('.banner-area');
 const imageList = [
-  imgSrc = 'url("../image/bmw2.jpg")',
-  imgSrc = 'url("../image/Buggy (3).jpg")',
-  imgSrc = 'url("../image/mercedes (14).jpg")',
-  imgSrc = 'url("../image/Ford_ranger (16).jpg")',
+  imgSrc = 'url("/image/bmw2.jpg")',
+  imgSrc = 'url("image/Buggy (3).jpg")',
+  imgSrc = 'url("image/mercedes (14).jpg")',
+  imgSrc = 'url("image/Ford_ranger (17).jpg")',
+];
+
+const productName = document.querySelector('.hero-banner-product-name');
+const nameList = [
+  'bmw x6 navi',
+  'buggy 4x4 dwuosobowy',
+  'mercedes dwuosobowy',
+  'ford ranger monster track 4x4'
+];
+const productPrice = document.querySelector('.hero-banner-price');
+const priceList = [
+  '1799 pln',
+  '1499 pln',
+  '1699 pln',
+  '2149 pln'
 ];
 
 let number = 0;
@@ -16,14 +31,12 @@ const changeSlide = () => {
     number = 0
   }
   bannerArea.style.backgroundImage = imageList[number];
+  productName.textContent = nameList[number];
+  productPrice.textContent = priceList[number];
   bannerArea.style.transition = 'background-image 1s';
 }
 
 let intervalSlide = setInterval(changeSlide, 5000);
-
-
-
-
 
 // // Open and close modal functions
 

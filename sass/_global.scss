@@ -23,6 +23,19 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1279px) {
+  .container {
+    width: 980px
+  }
+
+}
+
+@media (max-width: 1023px) {
+  .container {
+    width: 800px
+  }
+}
+
 .d-flex-row {
   display: flex;
   align-items: center;

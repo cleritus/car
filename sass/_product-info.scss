@@ -171,7 +171,11 @@
       font-size: 18px;
       line-height: 25px;
       color: #262626;
-      font-weight: 700;
+      // font-weight: 700;
+
+      li {
+        list-style: initial
+      }
     }
 
     .documentation {

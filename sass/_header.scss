@@ -14,16 +14,34 @@
 
       .page-logo-image {
         height: 60px;
-        width: 60px;
+        width: 160px;
         background-color: $red;
         margin-right: 10px;
       }
 
       h1.page-logo-text {
-        font-size: 42px;
+        font-size: 36px;
         letter-spacing: 1px;
         color: #fefefe;
         font-family: "Oswald";
+      }
+
+      @media(max-width: 1279px) {
+        h1.page-logo-text {
+          font-size: 30px;
+        }
+      }
+
+      @media(max-width: 1023px) {
+        h1.page-logo-text {
+          font-size: 24px;
+        }
+      }
+    }
+
+    @media(max-width: 1279px) {
+      .page-logo {
+        padding: 20px;
       }
     }
 
@@ -53,6 +71,20 @@
         color: $red;
         font-size: 24px;
         font-weight: bold;
+      }
+
+      @media(max-width: 1279px) {
+        i {
+          font-size: 20px;
+        }
+
+        span {
+          font-size: 12px;
+        }
+
+        a {
+          font-size: 22px;
+        }
       }
     }
   }
