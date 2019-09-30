@@ -1,22 +1,34 @@
 .header-container-top {
   background-color: #1b1b1b;
+  height: 150px;
 
+  @media(max-width: 768px) {
+    height: 100px;
+  }
 
-  .header-container {
+  .header-container-content {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 
     .page-logo {
       display: flex;
       align-items: center;
       padding: 45px 0;
 
+      @media(max-width: 768px) {
+        padding: 30px 0;
+      }
+
       .page-logo-image {
         height: 60px;
-        width: 160px;
+        width: 15vw;
         background-color: $red;
         margin-right: 10px;
+
+        @media(max-width: 768px) {
+          height: 40px;
+        }
       }
 
       h1.page-logo-text {
@@ -24,46 +36,42 @@
         letter-spacing: 1px;
         color: #fefefe;
         font-family: "Oswald";
-      }
 
-      @media(max-width: 1279px) {
-        h1.page-logo-text {
+        @media(max-width: 1280px) {
           font-size: 30px;
         }
-      }
 
-      @media(max-width: 1023px) {
-        h1.page-logo-text {
-          font-size: 24px;
+        @media(max-width: 1024px) {
+          font-size: 20px;
         }
-      }
-    }
 
-    @media(max-width: 1279px) {
-      .page-logo {
-        padding: 20px;
+        @media(max-width: 640px) {
+          font-size: 16px;
+        }
       }
     }
 
     .header-info-container {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       flex-basis: 50%;
       color: #fefefe;
 
       i {
-        font-size: 32px;
-        margin-right: 20px;
+        font-size: 28px;
         color: $red;
+      }
+
+      .fb-item,
+      .olx-item {
+        margin-right: 20px;
       }
 
       span {
         font-size: 14px;
-        letter-spacing: 1px;
-        line-height: 30px;
         color: #fefefe;
-        font-weight: 400;
+        margin: 0 20px;
       }
 
       a {
@@ -73,7 +81,7 @@
         font-weight: bold;
       }
 
-      @media(max-width: 1279px) {
+      @media(max-width: 1280px) {
         i {
           font-size: 20px;
         }
@@ -83,9 +91,40 @@
         }
 
         a {
-          font-size: 22px;
+          font-size: 20px;
         }
       }
+
+      @media(max-width: 1024px) {
+        div:nth-child(1) {
+          display: none;
+        }
+      }
+
+      @media(max-width: 640px) {
+        display: none;
+      }
+    }
+
+    .hamburger-item {
+      display: none;
+      color: $red;
+      font-size: 28px;
+      cursor: pointer;
+      transition: .3s;
+
+      @media(max-width: 1024px) {
+        display: block;
+      }
+
+      @media(max-width: 640px) {
+        font-size: 20px;
+      }
+    }
+
+    .hamburger-item:hover {
+      filter: drop-shadow(0 0 14px $red);
+      color: $white;
     }
   }
 }
@@ -93,16 +132,42 @@
 .header-container-bottom {
   background-color: $navColor;
   border-top: 1px solid #333;
+  transition: .5s;
 
   ul {
 
     li {
-      padding: 25px 60px 25px 0px;
+      padding: 25px 50px 25px 0px;
+
+      @media(max-width: 1024px) {
+        text-align: center;
+        padding-right: 0;
+      }
+
+      @media(max-width: 768px) {
+        padding: 15px 30px 15px 0;
+      }
+
+      @media(max-width: 480px) {
+        line-height: 80%;
+      }
 
       a {
         font-size: 14px;
         color: #fefefe;
         transition: .2s;
+
+        @media(max-width: 1280px) {
+          font-size: 14px;
+        }
+
+        @media(max-width: 768px) {
+          font-size: 12px;
+        }
+
+        @media(max-width: 480px) {
+          font-size: 10px;
+        }
       }
 
       .menu-active {
@@ -114,4 +179,26 @@
       color: $red;
     }
   }
+
+  @media(max-width: 1024px) {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    height: 100%;
+    width: 200px;
+    z-index: 4;
+    filter: opacity(.95);
+
+    ul {
+      position: absolute;
+      flex-direction: column;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.active {
+  left: 0;
 }

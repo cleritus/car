@@ -12,7 +12,6 @@
 }
 
 body {
-  // max-width: 1920px;
   margin: 0 auto;
   cursor: default;
   overflow-x: hidden;
@@ -21,18 +20,25 @@ body {
 .container {
   width: 1170px;
   margin: 0 auto;
-}
 
-@media (max-width: 1279px) {
-  .container {
+  @media (max-width: 1280px) {
     width: 980px
   }
 
-}
+  @media (max-width: 1024px) {
+    width: 720px
+  }
 
-@media (max-width: 1023px) {
-  .container {
-    width: 800px
+  @media (max-width: 768px) {
+    width: 630px;
+  }
+
+  @media (max-width: 640px) {
+    width: 410px;
+  }
+
+  @media (max-width: 480px) {
+    width: 320px;
   }
 }
 
@@ -66,14 +72,24 @@ a {
   border-style: none;
   text-transform: capitalize;
   cursor: pointer;
+
+  @media(max-width: 1024px) {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  @media(max-width: 640px) {
+    width: 80px;
+    height: 30px;
+    font-size: 10px;
+  }
 }
 
 .back-btn,
 .nav-right-btn,
 .nav-left-btn {
   position: fixed;
-  // bottom: 10%;
-  // right: 2%;
   height: 40px;
   width: 40px;
   background-color: rgba(223, 54, 54, .8);
@@ -83,6 +99,11 @@ a {
   border-style: none;
   cursor: pointer;
   z-index: 3;
+
+  @media(max-width:640px) {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .back-btn {

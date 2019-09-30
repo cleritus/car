@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>mr. auto</title>
+  <meta name="robots" content="none">
+  <title>Pan Samochodzik</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald&display=swap&subset=latin-ext"
     rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -17,12 +18,11 @@
   <div class="wrapper">
     <header>
       <div class="header-container-top">
-        <div class="header-container container">
+        <div class="header-container-content container">
           <div class="page-logo">
             <a href="index.html"><div class=page-logo-image></div></a>
             <a href="index.html"><h1 class=page-logo-text>Pan Samochodzik</h1></a>
           </div>
-
 
           <div class="header-info-container">
             <div class="d-flex-row">
@@ -35,13 +35,15 @@
               <div><span>+48 512 804 568</span></div>
             </div>
 
-            <div>
+            <div class="fb-item">
               <a href="https://www.facebook.com/tomasz.swidziniewski.7?fref=profile_friend_list&hc_location=friends_tab" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
             </div>
-            <div>
+            <div class="olx-item">
               <a href="https://www.olx.pl/oferty/uzytkownik/1LuAW/" target="_blank" rel="noopener noreferrer">OLX</a>
             </div>
-
+          </div>
+          <div class="hamburger-item">
+            <i class="fas fa-bars"></i>
           </div>
         </div>
       </div>
@@ -78,15 +80,19 @@
 
     <main>
       <div class="contact-map">
-        <iframe
+        <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2392.840079553372!2d23.076026332747002!3d53.1489645627037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc9805505ca9%3A0x8befc0cfddc8994b!2sOutlet%20Center%20Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1568272626700!5m2!1spl!2spl"
-          width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+        <iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=23.0688214302063%2C53.14726580793552%2C23.080794811248783%2C53.15093344753173&amp;layer=mapnik"
+          style="border: 1px solid black"></iframe>
       </div>
 
       <section>
-        <div class="contact-container container">
+        <div class="contact-container">
           <div>
             <h3>Adres</h3>
+            <p>Outlet Center</p>
             <p>Narodowych Sił Zbrojnych 15B</p>
             <p>15-690 Białystok</p>
           </div>
@@ -122,6 +128,9 @@
     </footer>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/sections-nav.js"></script>
 </body>
 
 </html>
