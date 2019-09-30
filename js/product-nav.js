@@ -26,8 +26,6 @@ const leftPosition = () => {
 
     imgNumber++;
     mainImg.src = imgList[imgNumber].src;
-    console.log(imgNumber, imgList.length);
-
   } else return;
 }
 
@@ -38,7 +36,6 @@ const rightPosition = () => {
 
     imgNumber--;
     mainImg.src = imgList[imgNumber].src;
-    console.log(imgNumber, imgList.length);
   } else return
 }
 
