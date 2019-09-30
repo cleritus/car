@@ -44,31 +44,22 @@
           color: $white;
         }
       }
-    }
 
-    @media(max-width: 1279px) {
-      .hero-banner-text {
+      @media(max-width: 1280px) {
         font-size: 36px;
       }
 
-    }
-
-    @media(max-width: 1024px) {
-      .hero-banner-text {
+      @media(max-width: 1024px) {
         font-size: 24px;
       }
     }
   }
-}
 
-@media(max-width: 1279px) {
-  .banner-area {
+  @media(max-width: 1280px) {
     height: 580px
   }
-}
 
-@media(max-width: 1023px) {
-  .banner-area {
+  @media(max-width: 1024px) {
     height: 410px
   }
 }

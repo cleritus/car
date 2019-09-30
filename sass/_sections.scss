@@ -133,7 +133,16 @@
       color: #555555;
       font-style: italic;
     }
+
+    @media(max-width: 1024px) {
+      width: 525px;
+
+      h3 {
+        text-align: center;
+      }
+    }
   }
+
 
   .service-img {
     padding: 30px;
@@ -144,7 +153,18 @@
       box-shadow: 2px 8px 16px rgb(0, 0, 0)
     }
   }
+
+  @media(max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+
+    .service-img {
+      width: 525px;
+    }
+  }
 }
+
+
 
 // SECTION 4 - informations
 
@@ -161,7 +181,7 @@
       box-shadow: 2px 8px 16px rgb(0, 0, 0)
     }
 
-    @media(max-width: 1279px) {
+    @media(max-width: 1280px) {
       width: 479px
     }
   }
@@ -191,10 +211,8 @@
       font-style: italic;
     }
   }
-}
 
-@media(max-width:1023px) {
-  .s4-box-container {
+  @media(max-width:1024px) {
     flex-direction: column;
     align-items: center;
   }
@@ -211,14 +229,14 @@
     color: $white;
     padding: 100px 0;
 
-    .box-service-icons {
+    .s5-box-icons {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
     }
 
-    .box-service-left,
-    .box-service-right {
+    .s5-box-left,
+    .s5-box-right {
       display: flex;
       background-color: $red;
       margin: 20px;
@@ -229,7 +247,7 @@
       }
     }
 
-    .box-service-right {
+    .s5-box-right {
       background-color: #1a1a1a;
     }
 
@@ -244,10 +262,8 @@
       font-size: 14px;
       padding-left: 30px;
     }
-  }
 
-  @media(max-width:1023px) {
-    .box-container {
+    @media(max-width:1024px) {
       flex-direction: column;
       align-items: center;
     }
