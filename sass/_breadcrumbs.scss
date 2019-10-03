@@ -18,19 +18,19 @@
       text-transform: capitalize;
 
       @media(max-width: 1024px) {
-        font-size: 18px;
+        font-size: 20px;
       }
 
       @media(max-width: 768px) {
-        font-size: 14px;
+        font-size: 18px;
       }
 
       @media(max-width: 640px) {
-        font-size: 12px;
+        font-size: 16px;
       }
 
       @media(max-width: 480px) {
-        font-size: 10px;
+        font-size: 14px;
       }
     }
 
@@ -52,15 +52,15 @@
           font-size: 14px;
 
           @media(max-width:1024px) {
-            font-size: 12px;
+            font-size: 14px;
           }
 
           @media(max-width:640px) {
-            font-size: 10px;
+            font-size: 12px;
           }
 
           @media(max-width:480px) {
-            font-size: 8px;
+            font-size: 10px;
           }
 
           li {

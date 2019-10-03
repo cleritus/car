@@ -2,6 +2,10 @@
   background-color: #1b1b1b;
   height: 150px;
 
+  @media(max-width: 768px) {
+    height: 100px;
+  }
+
   .header-container-content {
     display: flex;
     justify-content: space-between;
@@ -12,11 +16,19 @@
       align-items: center;
       padding: 45px 0;
 
+      @media(max-width: 768px) {
+        padding: 30px 0;
+      }
+
       .page-logo-image {
         height: 60px;
-        width: 160px;
+        width: 15vw;
         background-color: $red;
         margin-right: 10px;
+
+        @media(max-width: 768px) {
+          height: 40px;
+        }
       }
 
       h1.page-logo-text {
@@ -31,6 +43,10 @@
 
         @media(max-width: 1024px) {
           font-size: 20px;
+        }
+
+        @media(max-width: 640px) {
+          font-size: 16px;
         }
       }
     }
@@ -84,17 +100,25 @@
           display: none;
         }
       }
+
+      @media(max-width: 640px) {
+        display: none;
+      }
     }
 
     .hamburger-item {
       display: none;
       color: $red;
-      font-size: 30px;
+      font-size: 28px;
       cursor: pointer;
       transition: .3s;
 
       @media(max-width: 1024px) {
         display: block;
+      }
+
+      @media(max-width: 640px) {
+        font-size: 20px;
       }
     }
 
@@ -115,13 +139,34 @@
     li {
       padding: 25px 50px 25px 0px;
 
+      @media(max-width: 1024px) {
+        text-align: center;
+        padding-right: 0;
+      }
+
+      @media(max-width: 768px) {
+        padding: 15px 30px 15px 0;
+      }
+
+      @media(max-width: 480px) {
+        line-height: 80%;
+      }
+
       a {
         font-size: 14px;
         color: #fefefe;
         transition: .2s;
 
         @media(max-width: 1280px) {
+          font-size: 14px;
+        }
+
+        @media(max-width: 768px) {
           font-size: 12px;
+        }
+
+        @media(max-width: 480px) {
+          font-size: 10px;
         }
       }
 
@@ -138,9 +183,9 @@
   @media(max-width: 1024px) {
     position: fixed;
     top: 0;
-    left: -250px;
+    left: -200px;
     height: 100%;
-    width: 250px;
+    width: 200px;
     z-index: 4;
     filter: opacity(.95);
 
@@ -150,11 +195,6 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-
-      li {
-        text-align: center;
-        padding-right: 0;
-      }
     }
   }
 }

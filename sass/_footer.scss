@@ -8,6 +8,15 @@
     padding: 24px 0;
     font-size: 14px;
 
+    @media(max-width: 1280px) {
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    @media(max-width: 640px) {
+      font-size: 10px;
+    }
+
     span {
       color: #ffffff;
 
@@ -17,6 +26,10 @@
     }
 
     ul {
+      @media(max-width: 1024px) {
+        display: none
+      }
+
       li {
         padding-left: 50px;
 
@@ -34,15 +47,6 @@
           color: $red;
         }
       }
-
-      @media(max-width: 1024px) {
-        display: none
-      }
-    }
-
-    @media(max-width: 1280px) {
-      justify-content: center;
-      font-size: 12px;
     }
   }
 }
