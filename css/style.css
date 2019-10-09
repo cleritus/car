@@ -145,13 +145,6 @@ a {
 
 .header-container-top {
   background-color: #1b1b1b;
-  height: 150px;
-}
-
-@media (max-width: 768px) {
-  .header-container-top {
-    height: 100px;
-  }
 }
 
 .header-container-top .header-container-content {
@@ -186,17 +179,29 @@ a {
   height: 80px;
   width: 160px;
   background-image: url("../logo/logo-male.jpg");
-  background-position: center;
+  background-position-y: 160%;
   background-size: cover;
   -webkit-box-shadow: 0px 0px 20px inset #1b1b1b;
           box-shadow: 0px 0px 20px inset #1b1b1b;
-  border-radius: 45%;
-  margin-right: 10px;
+  border-radius: 50%;
+  margin-right: 30px;
 }
 
 @media (max-width: 768px) {
   .header-container-top .header-container-content .page-logo .page-logo-image {
-    height: 40px;
+    height: 45px;
+    width: 100px;
+    background-size: 90%;
+    background-position: 50% 130%;
+    -webkit-box-shadow: 0px 0px 10px inset #1b1b1b;
+            box-shadow: 0px 0px 10px inset #1b1b1b;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container-top .header-container-content .page-logo .page-logo-image {
+    height: 36px;
+    width: 80px;
   }
 }
 
@@ -716,6 +721,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 10px;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -1854,6 +1860,17 @@ a {
     width: 288px;
     height: 228px;
     padding: 25px;
+  }
+}
+
+.drive-licence h2 {
+  padding: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .drive-licence h2 {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
