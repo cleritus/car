@@ -716,6 +716,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   padding-top: 10px;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -1854,6 +1855,17 @@ a {
     width: 288px;
     height: 228px;
     padding: 25px;
+  }
+}
+
+.drive-licence h2 {
+  padding: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .drive-licence h2 {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
