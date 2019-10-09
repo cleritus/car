@@ -170,6 +170,11 @@
     }
 
     p {
+      padding-top: 20px;
+      line-height: 28px;
+      color: #555555;
+      font-style: italic;
+
       @media(max-width: 768px) {
         font-size: 14px;
       }
@@ -200,15 +205,7 @@
       @media(max-width: 640px) {
         font-size: 20px;
         line-height: 24px;
-
       }
-    }
-
-    p {
-      padding-top: 20px;
-      line-height: 28px;
-      color: #555555;
-      font-style: italic;
     }
   }
 

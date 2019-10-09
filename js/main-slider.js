@@ -2,15 +2,15 @@
 
 const bannerArea = document.querySelector('.banner-area');
 const imageList = [
-  imgSrc = 'url("/image/bmw2.jpg")',
-  imgSrc = 'url("image/Buggy (3).jpg")',
-  imgSrc = 'url("image/mercedes (14).jpg")',
-  imgSrc = 'url("image/Ford_ranger (17).jpg")',
+  imgSrc = 'url("image/bmw2.jpg")',
+  imgSrc = 'url("image/Buggy (10).jpg")',
+  imgSrc = 'url("image/mercedes (2).jpg")',
+  imgSrc = 'url("image/Ford_ranger (14).jpg")',
 ];
 
 const productName = document.querySelector('.hero-banner-product-name');
 const nameList = [
-  'bmw x6 navi',
+  'bmw x6 240V',
   'buggy 4x4 dwuosobowy',
   'mercedes dwuosobowy',
   'ford ranger monster track 4x4'
