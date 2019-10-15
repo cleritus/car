@@ -325,27 +325,6 @@ a {
   }
 }
 
-.header-container-top .header-container-content .hamburger-item {
-  display: none;
-  color: #df3636;
-  font-size: 30px;
-  cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-.header-container-top .header-container-content .hamburger-item:hover {
-  -webkit-filter: drop-shadow(0 0 14px #df3636);
-          filter: drop-shadow(0 0 14px #df3636);
-  color: #fff;
-}
-
-@media (max-width: 1024px) {
-  .header-container-top .header-container-content .hamburger-item {
-    display: block;
-  }
-}
-
 .header-container-bottom {
   background-color: #282828;
   border-top: 1px solid #333;

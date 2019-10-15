@@ -136,30 +136,8 @@
     }
 
     @media(max-width: 1024px) {
-
-      // .fb-item,
-      // .olx-item
       .header-info-container {
         display: none;
-      }
-    }
-
-    .hamburger-item {
-      display: none;
-      color: $red;
-      font-size: 30px;
-      cursor: pointer;
-      transition: .3s;
-    }
-
-    .hamburger-item:hover {
-      filter: drop-shadow(0 0 14px $red);
-      color: $white;
-    }
-
-    @media(max-width: 1024px) {
-      .hamburger-item {
-        display: block;
       }
     }
   }
